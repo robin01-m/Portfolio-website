@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel = "stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/58b3420047.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="website">
+    <div id="header">
+        <div class = "container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">Experience</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <h2>Portfolio.</h2>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm 
+                    <span>Robin</span></h1>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/robin-tuteja/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/robin01-m"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.instagram.com/robintuteja_26/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="Robin's Resume.pdf" class="btn btn2">Resume</a>
+            </div>
+        </div>
+    </div>
+<!---about section-->
+    <div id="about">
+        <div class="container ">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src = "me.jpg" class="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <br>
+                    <div>
+                        <p>
+                            My name is Robin, and at my core, I am an engineer. 
+                            I have always been captivated by the way things work and the potential 
+                            to create innovative solutions to complex challenges. 
+                            As an engineer, I find myself constantly seeking ways to merge creativity with technical expertise, 
+                            transforming ideas into tangible realities. The world of engineering is not just a profession for me; it's a passion that drives me to explore, learn, and contribute to the advancement of technology and the betterment of our lives. Join me on this exciting journey of innovation and problem-solving, as we strive to build a brighter future together.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming</span><br>C++ | Java | JavaScript</li>
+                                <li><span>Web Devlopment</span><br>HTML | CSS | REACTJS | BOOTSTRAP</li>
+                                <li><span>Others</span><br>Data Structures | Algorithms | OOPS | SQL | Linux | Git | Github</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Chandigarh Engineering College Landran</span><br>BTECH | ECE | 8.72 CGPA | 2019 - 2023</li>
+                                <li><span>Harmilap Mission School</span><br>Class 12 | 91.2% | 2018 - 2019</li>
+                                <li><span>Harmilap Mission School</span><br>Class 10 | 9.4 CGPA | 2016 - 2017</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Experience</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-amazon"></i>
+                    <h2>Amazon</h2>
+                    <p>
+                        <h2>SDE Intern</h2>
+                        <h3>Jan 2023 - Jun 2023</h3>
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>ACM Student Chapter CEC</h2>
+                    <p>
+                        <h2>Developer</h2>
+                        <h3>Oct 2021 - Oct 2022</h3>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png">
+                    <div class="layer">
+                        <h3>Your Store</h3>
+                        <p>
+                            E-Commerce Website 
+                        </p>
+                        <a href="https://github.com/robin01-m/your-store"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png">
+                    <div class="layer">
+                        <h3>Inappropriate Speech Detection</h3>
+                        <p>
+                            Developed using Machine Learning and 
+                            used to detect inappropriate words on social media platforms. 
+                        </p>
+                        <a href="https://github.com/robin01-m/inappropriate-speech-detection"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png">
+                    <div class="layer">
+                        <h3>My Portfolio</h3>
+                        <p>
+                            A Website which contains all the information about me.  
+                        </p>
+                        <a href="https://github.com/robin01-m/My-Portfolio"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/robin01-m" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>robintuteja64@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91-7348073736</p>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Portfolio. All rights reserved</p>
+        </div>
+    </div>
+</div>
+    <script>
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab"); 
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+   
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzxIhkRfTfoNNFl-HkE1zSYYDmq_ZbZ9MqoZeTDRsqPaGrLIL12s0Ozetumgkt39SdOFw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent sucessfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+})
+</script>
+
+    
+</body>
+</html>
